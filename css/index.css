@@ -9,11 +9,12 @@
 h2 {
     font-weight: 600;
     color: blueviolet;
+    font-weight: 700;
 }
 
 body{
     font-family: 'Secular One', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     background-color: #F5F5F5;
     max-width: 70%;
     margin: auto;
@@ -24,8 +25,10 @@ body{
     padding: 1.5rem;
     width: 40%;
     margin: auto;
+    
 }
 
 .form-field{
     margin: 0.8rem;
+    font-weight: 300;
 }
