@@ -1,6 +1,30 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.0-beta1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
     "mysql": "^2.18.1"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "name": "natatz-form",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon backend/middleware/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noam-y/natatz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noam-y/natatz/issues"
+  },
+  "homepage": "https://github.com/noam-y/natatz#readme",
+  "description": ""
 }
