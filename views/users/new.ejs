@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../public/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Signika+Negative:wght@300;500;700&display=swap" rel="stylesheet">
+        
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <title>נתץ פצץ</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div id="main-text">
+        <div id="logo-line" >
+            <h2>הרשות הארצית לתחבורה ציבורית</h2>
+            <p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף לורם איפסום דולור סיט אמט, נולום ארווס סאפיאן - פוסיליס קוויס, אקווזמן קוואזי במר מודוף. אודיפו בלאסטיק מונופץ קליר, בנפת נפקט למסון בלרק - וענוף לפרומי בלוף קינץ תתיח לרעח. לת צשחמי ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.
+
+              צש בליא, מנסוטו צמלח לביקו ננבי, צמוקו בלוקריה שיצמה ברורק. הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי </p>
+            <p>today is <%= locals.current_time %></p>
+        </div>
+    
+        <div id="log-form">
+            <h3>עוד כותרת לאתר להוסיף מילים</h3>
+            <form method="POST" action="/users">
+                <div class="form-field">
+                    <label for="fname">שם</label>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                <div class="form-field">
+                    <label for="phone">טלפון</label>
+                    <input type="text" id="phone" name="phone"><br>
+                </div>
+                <div class="form-field">
+                    <label for="email">אימייל</label>
+                    <input type="text" id="email" name="email"><br>
+                </div>
+                <div class="form-field">
+                    <label for="id">ת"ז</label>
+                    <input type="text" id="id" name="id"><br>
+                </div>
+                <div class="form-field">
+                    <label for="reported car">ל"ז מבצע העבירה</label>
+                    <input type="text" id="reported car" name="reported car"><br>
+                </div>
+                <div class="form-field">
+                    <label for="date">תאריך ביצוע העבירה</label>
+                    <input type="date" id="date" name="date"><br>
+                </div>
+                <div class="form-field">
+                    <label for="details">פירוט התלונה</label><br>
+                    <input type="text" id="details" name="details"><br>
+                </div>
+
+                <input type="submit" value="Send Request">
+
+            </form>
+    
+        </div>
+    
+    </div>
+    
+</body>
+</html>

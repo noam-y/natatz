@@ -2,18 +2,21 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.static("public")) // this line is the path to static pages on the website, available on static folder
+app.use(express.urlencoded({extended: true})) //this line allows getting info from forms
+
+
 app.set("view engine", "ejs")
 
+
+const userRouter = require("../routes/users")
+app.use("/users", userRouter)
 // this renders the homepage according to index.js file.
 app.get('/', (req, res) => {
-  res.render("index")
+  res.send("homepage")
 })
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
-// this will be used to insert given fields to v_complaints table of the db; not built yet!
-app.post('/', (req, res) => {
-    res.send('Got a POST request')
-  })
