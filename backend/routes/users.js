@@ -13,14 +13,19 @@ var users = [
   
 
 router.post('/', (req,res) => {
-    const isValid = true
+    const isValid = true // in the future this will be used to validate user details
     if (isValid){
-        users.push({phone:req.body.phone})
+        users.push({
+            phone : req.body.phone,
+            email: req.body.email,
+            reported_car : req.body.reported_car
+        })
         res.redirect(`/users/${users.length -1}`)
     } else {
         console.log('ERROR')
+        res.send(`heyyyyy, the request about laz failed`)
+
     }
-    res.send(`heyyyyy, the request about laz`)
 })
 
 router
