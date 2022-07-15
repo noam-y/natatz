@@ -33,6 +33,9 @@ router.post("/", (req, res) => {
       phone: req.body.phone,
       email: req.body.email,
       reported_car: req.body.reported_car,
+      details: req.body.details,
+      reporter_name: req.body.fname,
+      commited_date: req.body.commited_date
     });
     res.redirect(`/users/${complaints.length - 1}`);
     console.log(req.complaint);
