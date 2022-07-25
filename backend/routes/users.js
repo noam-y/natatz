@@ -1,6 +1,10 @@
 const express = require("express");
 const router = express.Router();
-
+const {
+  mulInsert,
+  singleInsert
+} = require("../db/create-db")
+//let { mul_insert } = db_actions
 router.get("/new", (req, res) => {
   res.render("users/new", { current_time: "wednesday" });
 });
@@ -37,6 +41,9 @@ router.post("/", (req, res) => {
       reporter_name: req.body.fname,
       commited_date: req.body.commited_date
     });
+
+    mulInsert([req.body.fname, req.body.phone, req.body.email, req.body.reporter_id, req.body.reported_car, req.body.details])
+    // line above inserts basic details into the mySql database. exludes dates of reported accident
     res.redirect(`/users/${complaints.length - 1}`);
     console.log(req.complaint);
   } else {
