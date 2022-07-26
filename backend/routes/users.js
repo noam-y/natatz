@@ -42,7 +42,7 @@ router.post("/", (req, res) => {
       commited_date: req.body.commited_date
     });
 
-    mulInsert([req.body.fname, req.body.phone, req.body.email, req.body.reporter_id, req.body.reported_car, req.body.details])
+    mulInsert([req.body.fname, req.body.phone, req.body.email, req.body.reporter_id, req.body.reported_car, req.body.details, req.body.commited_date])
     // line above inserts basic details into the mySql database. exludes dates of reported accident
     res.redirect(`/users/${complaints.length - 1}`);
     console.log(req.complaint);
